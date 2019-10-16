@@ -8,6 +8,9 @@
             $this->load->model("produtos_model");
             $produtos = $this->produtos_model->buscaTodos();
             
+            //intanciando helper
+            $this->load->helper("url");
+            $this->load->helper("currency");
             // Enviado dados para view
             $dados = array("produtos" => $produtos);
             $this->load->view("produtos/index.php",$dados);
