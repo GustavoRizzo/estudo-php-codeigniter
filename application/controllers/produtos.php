@@ -11,8 +11,10 @@
             //intanciando helper
             $this->load->helper("url");
             $this->load->helper("currency");
-            // Enviado dados para view
+            // Enviado dados para view de produtos
             $dados = array("produtos" => $produtos);
+            // Carrega formulário            
+		    $this->load->helper(array("form"));
             $this->load->view("produtos/index.php",$dados);
         }
     }
