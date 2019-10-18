@@ -51,6 +51,11 @@
             echo form_close();
             ?>
 
+            <div>
+                <h2><a class="btn btn-outline-success" href="./index.php/frutas">Ir para o mercado de frutas</a></h2>
+            </div>
+
         </div>
+        
     </body>
 </html>
