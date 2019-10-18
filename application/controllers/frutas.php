@@ -20,6 +20,8 @@ class frutas extends CI_Controller {
 	 */
 	public function index()
 	{
+        //intanciando helper
+        $this->load->helper("url");
 		$this->load->view('frutas/index.php');
 	}
 }
